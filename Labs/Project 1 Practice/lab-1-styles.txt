@@ -1,0 +1,14 @@
+<!-- Internal style sheet for use in Lab 1 -->
+<style>
+    .container {
+        width: 720px;
+        margin: 35px auto; /* centers the container */
+        border: 1px solid black;
+        padding: 50px;
+    }
+    img {
+        /* forces images to pay attention to width of the div named 'container', which is its parent */
+        width: 100%;
+        display: block;
+    }
+</style>

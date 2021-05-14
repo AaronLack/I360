@@ -1,0 +1,65 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    FLEXBOX PRACTICE
+*/
+
+/* Sets max width to 960 */
+body {
+  max-width: 960px;
+}
+
+header {
+  background-color: orange;
+  padding: 0 1.0em;
+
+  /* Flexbox */
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+main {
+  background-color: gold;
+
+  /* Flexbox */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+}
+
+nav p {
+  /* Make the links sit next to each other */
+  display: inline-block;
+  margin-left: 1.0em;
+}
+
+
+/*
+  PAGE
+*/
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+  background-color: lemonchiffon;
+  padding: 2.0em 3.0em;
+  margin: 1.0em;
+  text-align: center;
+
+  /* flexbox */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+
+}

@@ -1,0 +1,131 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { padding: 2.0em;}
+h1 { font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; }
+.shapes { display: flex; flex-flow: row wrap;}
+.shapes div { margin: 1.0em; }
+
+a.button {
+  background: #e74c3c;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+/* CSS Shapes */
+
+.circle {
+  background: green;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+}
+
+.square {
+  background: blue;
+  /* Add more styles here */
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+
+}
+
+.triangle {
+  /* red */
+  /* Add more styles here */
+  height: 0;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid red;
+}
+
+/* I used this link: https://css-tricks.com/the-shapes-of-css/ */
+.diamond {
+  /* gold */
+  /* Add more styles here */
+  height: 0;
+  width: 0;
+  border: 100px solid transparent;
+  border-bottom-color: gold;
+  position: relative;
+  top: -100px;
+  
+
+}
+.diamond::after {
+  /* Add more styles here */
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: gold;
+
+}
+
+.rectangle {
+  background: purple;
+  /* Add more styles here */
+  height: 200px;
+  width: 200px;
+
+}
+
+.rectangle:hover {
+  /* Add more styles here */
+  width: 400px;
+  transition: width 1s ease 1s;
+}
+
+.bordered-circle {
+  background: url('../images/lil-bub.jpg');
+  background-image: contain;
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid purple;
+}
+
+/* http://bennettfeely.com/clippy/ */
+.clipped-circle {
+  background: url('../images/lil-bub.jpg');
+  /* Add more styles here */  
+  background-image: contain;
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
+  /* border-radius: 50%; */
+  clip-path: circle(50% at 50% 50%);
+  /* border: 5px solid black; */
+
+}
+
+/* Changes to the animation.css classes */
+/* Add CSS variable overwrites here */
+@keyframes square {
+  from {background-color: red;}
+  to {background-color: green;}
+}
+
+.square-animation {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  animation-name: square;
+  animation-duration: 4s;
+
+}

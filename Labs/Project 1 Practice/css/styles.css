@@ -1,0 +1,165 @@
+/* Aaron Lack I360 SP21 Lab 2 */
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    UTILITIES
+*/
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+    Set a background color
+*/
+
+body {
+    background-color: #b3ecff;
+}
+
+.container {
+    width: 720px;
+    margin: 35px auto; /* centers the container */
+    border: 1px solid black;
+    border-radius: 10px;  /* Rounds the corners of the box */
+    padding: 50px;
+    background-color: white;
+}
+
+/*
+    TYPOGRAPHY
+    https://www.thoughtco.com/web-safe-font-stacks-3467429
+    Set a default font for all text-containing HTML elements
+    
+*/
+h1, h2, h3, h4, h5, h6, small, p, td, li, figcaption {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+p {
+    font-size: 110%;
+    line-height: 1.3em;
+}
+
+ul li {
+    line-height: 1.5em; 
+}
+
+ol li {
+    padding-bottom: 1.0em;
+}
+
+/*
+    IMAGES
+    You need to place AT LEAST two images in your HTML
+    And 1+ of them needs to be styled using figure / img / figcaption
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 2.5em 0 1.0em;
+}
+
+figcaption {
+    margin: 1.0em 0 2.0em;
+}
+
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    LINKS
+    Set for all four states we discussed in class
+*/
+
+a:link, a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover a:active{
+    color: red;
+    text-decoration: none;
+}
+
+/*
+    TABLES
+    You need at least one table in your project
+*/
+table {
+    background-color: #ecf0f1;
+}
+
+tr {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/*
+    RECIPE PAGE
+    Try assigning classes to some of the paragraphs to differentiate their styles e.g. subtitle or byline
+*/
+
+
+.ingredients {
+    background-color: #ffce99;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 10px;
+   
+
+}
+
+.directions {
+    background-color: #ffb3b3;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+
+.tray {
+    border: 5px groove lightgrey;
+    border-radius: 5px; 
+}
+
+.stack {
+    border: 5px solid lightgrey;
+    border-radius: 5px; 
+    
+}
+
+.plate {
+    border: 5px ridge lightgrey;
+}

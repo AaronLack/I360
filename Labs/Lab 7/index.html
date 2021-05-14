@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+		I360 Web Design
+		Lab 7: CSS Shapes, Transitions & Animations
+
+		https://css-tricks.com/working-with-shapes-in-web-design/
+		https://www.w3schools.com/css/css3_transitions.asp
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transition
+		https://animate.style/
+		https://scotch.io/tutorials/level-up-your-websites-with-animatecss
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Transitions</title>
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- Animate CSS -->
+		<!-- Add either the CDN link (recommended) or path to file in your project folder -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+
+		<h1>CSS Shapes, Transitions and Animations</h1>
+		<div class="shapes">
+			<div class="circle"></div>
+
+				<div class="square-animation">
+					<div class="square"></div>
+				</div>
+			
+			<div class="triangle"></div>
+			<div class="diamond"></div>
+
+			<div class="bordered-circle"></div>
+			<div class="clipped-circle"></div>
+
+			<div class="rectangle"></div>
+		</div>
+
+		<!-- OPTIONAL -->
+		<!-- <script>
+			document.querySelectorAll('.shapes div').forEach( shape => {
+				shape.addEventListener('click', e => {
+					e.target.classList.toggle('animate__animated');
+					// feel free to change 'animate__bounce' to another animation
+					e.target.classList.toggle('animate__bounce');
+				});
+			});
+		</script> -->
+	</body>
+</html>
