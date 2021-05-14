@@ -1,0 +1,129 @@
+<!-- Aaron Lack ~ Project 5 ~ I360 ~ 4/19/21 -->
+<!DOCTYPE html>
+<html lang="en">
+
+	<!--
+		I360 Web Design: Project 5 Starter: Helpful links
+		https://fontawesome.com/get-started
+		https://fonts.google.com/
+		https://www.w3schools.com/howto/howto_js_off-canvas.asp
+		http://leafletjs.com/examples/quick-start/
+		https://www.latlong.net/
+		http://www.material-ui.com/#/customization/colors
+		https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient
+		https://css-tricks.com/stripes-css/
+		Access Token:
+		pk.eyJ1IjoiaTM2MCIsImEiOiJjamZuYjYwaG4wbDRuMnFtZHNhYWhpbzc0In0.yMHIZKQj5MtG1fJBMAlXbA
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Project 5</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- Leaflet: OK to use either downloaded resources or CDN -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
+		
+		<!-- Import menu thing -->
+		<!-- <link rel="stylesheet" href="css/nav.css"> -->
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Google Fonts -->
+		<!-- PT SANS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400&display=swap" rel="stylesheet">
+
+		<!-- For my headers -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+		<!-- Font Awesome - For use in I360 -->
+		<script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- OPTIONAL VISUAL INDICATOR FOR BREAK POINTS -->
+		<div id="tag"></div>
+
+		<!-- NAVIGATION -->
+		<nav id="mySidenav" class="sidenav">
+			<a class="closebtn">&times;</a>
+			<a href="#">About</a>
+			<a href="#">Admissions</a>
+			<a href="#">Academics</a>
+			<a href="#">Contact</a>
+		</nav>
+		  
+		<!-- Use any element to open the sidenav -->
+		<div class="openbtn">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="menu-text">menu</span>
+		</div>
+
+		<div class="all-over-bkg"></div>
+
+		<!-- MAIN CONTENT -->
+		<header>
+			<h1>Luddy School of <br><span>Informatics, Computing and Engineering</span></h1>
+			<!-- Place map here -->
+			<div id="mapid"></div>
+		</header>
+		<main>
+			<div class="racing-stripes"></div>
+				<article>
+					<section class="about">
+						<div class="container">
+							<h2>The school of tomorrow</h2>
+							<p>The Indiana University Luddy School of Informatics, Computing, and Engineering is one of the world’s largest, broadest, and best technology and information schools.</p>
+							<p>We shape the future through interdisciplinary research and education that make the impossible possible and solve the problems of tomorrow today.</p>
+						</div>
+					</section>
+
+					<section class="degrees">
+						<div class="container">
+							<h3>Degrees for evolving jobs</h3>
+							<p>Our programs are broad, ranging from the technical to the societal and often blending the two. A Luddy education prepares students to thrive in today’s jobs and to adapt as technology careers change in the decades ahead.</p>
+							<a class="button" href="https://luddy.indiana.edu/academics/undergraduate-programs/index.html">Undergraduate programs</a>
+							<a class="button" href="https://luddy.indiana.edu/academics/grad-programs/index.html">Graduate programs</a>
+							<a class="button" href="https://luddy.indiana.edu/career-services/index.html">Career services</a>
+						</div>
+					</section>
+						
+					<section class="research">
+						<div class="container"> 
+							<h3>Research that defies boundaries</h3>	
+							<div class="research-flex">
+								<img class="challenges-img" src="images/research-bioengineering.lab.jpg" alt="research">
+								<div class="move-right">
+									<p>No challenge is too big for us. Our faculty, researchers, and students team up to explore the frontiers of what technology and information can do in areas ranging from artificial intelligence to medicine. And they use what they discover to make life better for all of us.</p>
+									<a class="button" href="https://luddy.indiana.edu/research/index.html">Explore our research</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</article>
+		</main>
+					
+		
+		<footer></footer>
+
+
+		<!-- JAVASCRIPT -->
+		<!-- PASTE the JS for your Responsive Side Push Navigation w/ Opacity in the NAV.JS file -->
+		<!-- I put this in main -->
+		
+		<!-- Leaflet: Either ok - download the resources or use the CDN -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+		
+   		<!-- ALSO OK to put activation script into a LEAFLET.JS or MAIN.JS file in JS folder, then link with script tag  -->
+		<script src='js/main.js'></script>
+	</body>
+</html>

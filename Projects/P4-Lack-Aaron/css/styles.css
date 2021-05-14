@@ -1,0 +1,393 @@
+/* Aaron Lack ~ 4/15/21 ~ I360 SP21 Project 4 */
+
+/* natural box model */
+
+/* Algorithm Steps */
+/* Step 1: Get background dotted image to position */
+/* Step 2: Form right column container with the article tag*/
+/* Step 3: Get flexbox to behave, then colors, text tweeks */
+/* Step 4: Finishing touches */
+/* Definately a hard project, but probably my favorite that I've worked on so far */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* COLORS */
+/* Will create a warning in the W3C CSS validator */
+/* Ignore that - CSS variables are fine to use */
+:root {
+  --slategrey: #434B63;
+  --peach: #FFDBBA;
+  --coral: #F27935;
+  --turquoise: #4ECDC4;
+  --cream: #fef9ed;
+  --grey: #6C7A89;
+  --red: #f2354f;
+}
+
+body {
+  /*This was for readability when I started the project */
+  background-color: gray; 
+}
+
+img {
+  display: block;
+  width: 100%;
+  /* Centers images */
+  margin: auto;
+}
+
+/* TYPOGRAPHY & LINKS */
+/* font-family: 'Ovo', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* links are coral / peach  */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ovo', serif;
+  color: var(--cream);
+  text-align: center;
+}
+
+p, figcaption, li, address  {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: var(--coral);
+}
+a:hover, a:active {
+  color: var(--peach);
+}
+
+/* NAVIGATION */
+nav {
+  /* TODO: Fix the navigation to the upper-right corner of the window */
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.toggle {
+  color: var(--cream);
+  text-align: right;
+}
+.item {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.item a:hover {
+  color: #F27935;
+}
+.item a {
+  color: #434B63;
+  font-size: 36px;
+  text-decoration: none;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  background-color: var(--cream);
+}
+
+/* HOME & BASE STRUCTURE */
+/* Set the background to counter.jpg */
+/* Figure out how to not get the image to scroll */
+#home {
+  background: url(../images/counter.jpg) no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  background-attachment: fixed; 
+}
+
+.dots {
+  /* This sets a second background - because it's generated we can't use the multiple bkgs technique from Project 2 */
+  /* http://www.patternify.com/ */
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQYV2NkYGBIY4CAWVAaTDHik0BWCGeDdCADuLFES8B1AwBXcgQHq6hTZwAAAABJRU5ErkJggg==) repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  background: rgb(78,205,196);
+  background: linear-gradient(180deg, rgba(78,205,196,1) 0%, rgba(67,75,99,1) 100%);
+  width: 600px;
+}
+
+.logo {
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  flex-flow: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* margin-left: 10px; */
+}
+
+#home article {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  flex-flow: column;
+}
+
+#menu article {
+  text-align: center;
+}
+
+/* TODO: Style the typography for #home  */
+
+.brilliant {
+  text-align: center;
+  font-size: 48px;
+}
+
+.artisan {
+  text-align: center;
+  color: var(--peach);
+  font-size: 24px;
+}
+
+/* Decorative box */
+.line {
+  border: 1px dotted var(--cream);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.line p {
+  text-align: left;
+}
+
+/* ASIDE */
+/* TODO: style the aside and any typography you need for aside */
+aside {
+  background-color: var(--cream);
+  color: var(--coral);
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  padding: 10px;
+  margin-top: 20px;;
+}
+
+/* The H3 in aside */
+aside h3 {
+  color: var(--coral);
+}
+
+/* MENU PAGE */
+/* TODO: Override any styles you need to from #home */
+/* Use #menu before the selectors if they repeat from #home */
+/* Use the class name if there is a class set */
+#menu {
+  background: rgb(67,75,99);
+  background: linear-gradient(90deg, rgba(67,75,99,1) 0%, rgba(108,122,137,1) 100%);
+  color: var(--peach);
+}
+
+/* TODO: style the rest of the elements and typography for the menu page */
+#menu h1, h2, h3, h4 {
+  color: var(--peach);
+}
+
+.sizes {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid var(--peach);
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* padding: 3px; */
+}
+
+.gelato {
+  border: 1px solid var(--peach);
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 125px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.beverages {
+  border: 1px solid var(--peach);
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.coffees {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 25px;
+  /* align-content: flex-end; */
+}
+
+/* For the Beverages and Coffee table, space between halfway point */
+.space {
+  padding-left: 50px;
+}
+
+.sorbetto {
+  border: 1px solid var(--peach);
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 150px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* Shrinks content to be closer together  */
+#menu p {
+  margin: .25em;
+}
+
+/* FOOTER */
+/* Style the footer */
+/* main footer */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 200px;
+  /* text-align: left; */
+  padding-left: 50px;
+}
+
+footer p {
+  text-align: left;
+  /* padding-left: 200px; */
+}
+
+/* Menu Footer */
+/* #menu footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  padding-left: 40px;
+  text-align: left;
+} */
+
+#menu footer p {
+  text-align: left;
+}
+
+/* TODO: style the rest of the footer */
+h4 {
+  text-align: left;
+  color: var(--cream);
+}
+
+.location {
+  text-align: left;
+  color: var(--cream);
+  padding-right: 50px;
+}
+
+address {
+  text-align: left;
+  color: var(--cream);
+}
+
+.hours {
+  text-align: left;
+  color: var(--cream);
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+
+.orange {
+  color: var(--coral);
+  padding-bottom: 10px;
+}
+
+.social {
+  margin: 5px;
+  margin-right: 7px;
+  margin-bottom: 20px;
+}
+
+.social a {
+  padding: 7px;
+  padding-top: 17px;
+  margin-right: 7px;
+  color: var(--cream);
+  background-color: var(--coral);
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* TODO: Adjust the size of the .container in index.html */
+/* TODO: Adjust any headline sizes (as needed) */
+
+/* I just set the width as percentaces, per Erika's announcement. Otherwise, this website is pretty responsive with the Flexbox that I have provided. */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .container {
+    width: 75%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}

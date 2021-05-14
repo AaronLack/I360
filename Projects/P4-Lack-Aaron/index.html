@@ -1,0 +1,105 @@
+<!-- Aaron Lack ~ 4/15/21 ~ I360 SP21 ~ Project 4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Project 4 STARTER
+    WE GIVE YOU THE HTML, YOU COMPLETE THE CSS
+    I360 Web Design, Spring 2021
+    Redesign exercise based on the real-life
+    Brilliant Coffee Company in Bloomington, IN
+    https://brilliantcoffeeco.com/
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 4 Complete</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- link to Font Awesome icon font -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ovo&display=swap" rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <p class="sr-only">This is a redesign exercise of a REAL place https://brilliantcoffeeco.com/ that you absolutely should visit and buy things from. It's delicious. You shall NOT post your redesign exercise on the internet (outside of submitting it on Canvas for this class) in any way shape or form. It is purely for your practice as part of an in-class assessment. If you do post it outside of class, we won't be able to have these kinds of real-world remakes anymore, so don't ruin it. Don't be the reason we cannot have nice things to practice our new skills with.</p>
+
+    <nav>
+        <ul>
+        <!-- Notice the use of the icon font - make sure you know how to install these -->
+          <li class="toggle"><i class="fas fa-bars fa-2x"></i></li>
+          <li class="item"><a href="about.html">About</a></li>
+          <li class="item"><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+      
+    <main id="home">
+        <div class="dots">
+            <div class="container">
+                <article>
+                    <img class="logo" src="images/logo.png" alt="logo">
+                    
+                    <h1 class="brilliant">Brilliant Coffee</h1>
+                    
+                    <h2 class="artisan">An artisan experience straight from Italy</h2>
+                    
+                    <div class="line">
+                        <img src="images/gelato-flavors.jpg" alt="coffee and gelato">
+                        <h3>Coffee + Gelato = Pure Brilliance</h3>
+                        <p>Bold, rich espresso… velvety sweet and luscious gelato… there is nothing more brilliant than this combination! Our passion is to bring fresh and inspiring authenticity with the finest ingredients. Experience our Italian-style artisan gelato made with the utmost brilliance! Or, experience a new level in the art of coffee – that we roast in-house – with our newly designed coffee machine – the award winning TopBrewer by Scanomat from Denmark.</p>
+                    </div>
+                    <div class="line">
+                        <img src="images/coffee.jpg" alt="coffee">
+                        <h3>Coffee Reimagined</h3>
+                        <p>Bold, rich espresso… paired with luscious gelato, there is nothing more brilliant! We bring a whole new experience to the art of coffee. Our passion is to bring fresh and inspiring authenticity with the finest ingredients.</p>
+                    </div>
+                    <div class="line">
+                        <img src="images/gelato.jpg" alt="gelato">
+                        <h3>Velvety. Sweet. Genius.</h3>
+                        <p>We use the finest natural ingredients for our gelato. Imagine being in your own private, luxurious villa on the Italian countryside. Experience our Italian-style artisan gelato made with the utmost brilliance! </p>
+                    </div>
+                </article>
+                <aside>
+                    <h3>Italian-style artisan gelato made with the utmost <em>brilliance.</em></h3>
+                </aside>
+                <footer>
+                    <div class="location">
+                        <h4>Bloomington Location:</h4>
+                        <address>217 W 6th Street<br>
+                        Bloomington, IN 47404</address>
+                    </div>
+                    <div class="hours">
+                        <h4>Hours:</h4>
+                        <p>Sunday-Wednesday<br>
+                        8:00am – 6:00pm</p>
+                        <p>Thursday-Saturday<br>
+                        8:00am – 8:00pm</p>
+                    </div>
+                    <div>
+                        <h4>Contact:</h4>
+                        <a href="mailto:brilliantcoffeeco@revvandstrum.com"><address class="orange">brilliantcoffeeco@revvandstrum.com</address></a>
+        
+                        <div class="social">
+                            <!-- Again, make sure you know how to install and modify the icon font size (fa-lg) -->
+                            <a href="https://www.facebook.com/brilliantcoffeeco/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="https://www.instagram.com/brilliant_coffee_co/"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script for Navigation - hides and reveals menu items on click -->
+    <script>
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+</body>
+</html>

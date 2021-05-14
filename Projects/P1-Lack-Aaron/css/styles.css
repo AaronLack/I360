@@ -1,0 +1,136 @@
+/* Aaron Lack ~ I360 ~ Project 1 ~ 2/27/21 /*
+/* My color scheme was inspired by this website, option 19 https://visme.co/blog/website-color-schemes/ */
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/* STRUCTURE: Set a background color */
+body {
+    background-color: #E85A4F;
+}
+
+.container {
+    width: 750px;
+    margin: 35px auto; /* centers the container */
+    border: 3px solid #D8C3A5;
+    border-radius: 10px;  /* Rounds the corners of the box */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color:#EAE7DC;
+}
+
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6, small, p, td, li, figcaption {
+    font-family: 'Arial', 'Gadget', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 110%;
+    line-height: 1.3em;
+}
+
+ul li {
+    line-height: 1.5em; 
+}
+
+ol li {
+    padding-bottom: 1.0em;
+}
+
+
+/* IMAGES AND FIGURES */
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 2.5em 0 1.0em;
+}
+
+figcaption {
+    margin: 1.0em 0 2.0em;
+}
+
+/* LINKS */
+a:link, a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover a:active{
+    color: red;
+    text-decoration: none;
+}
+
+/* TABLES */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+td {
+    background-color: #E8E8E8;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #E98074;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+/* CLASSES AND CUSTOM SYTLES */
+.pic-one {
+    border: 5px solid #D8C3A5;
+}
+
+.pic-two {
+    border: 5px  groove #D8C3A5;
+}
+
+.pic-three {
+    border: 5px ridge #D8C3A5;
+}

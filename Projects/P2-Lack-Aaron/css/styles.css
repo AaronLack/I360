@@ -1,0 +1,92 @@
+/* Aaron Lack ~ I360 ~ Project 2 ~ 3/7/21 */
+/* Custom styles go here */
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+    
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url(../images/flag.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 1000px;
+    overflow: hidden; /* So the page doesnt scroll */
+}
+
+.container {
+    width: 900px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 150px auto 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 30px;
+}
+
+.quote {
+    font-family: 'Assistant', sans-serif; 
+    font-size: 36px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    line-height: 1.15em;
+}
+
+.person {
+    font-family: 'Assistant', sans-serif; 
+    font-size: 28px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quote::before {
+    content: open-quote;
+    font-size: 64px;
+    font-family: 'Assistant', sans-serif; 
+    color: black;
+    position: absolute;
+    top: 185px; /* Assigning the correct possitoin for the quote */
+    left: 177px; /* Assigning the correct possitoin for the quote */
+}
+
+.quote::after {
+    content: close-quote;
+    font-size: 64px;
+    font-family: 'Assistant', sans-serif; 
+    color: black;
+    position: absolute;
+    bottom: 300px; /* Assigning the correct possitoin for the quote */
+    right: 725px; /* Assigning the correct possitoin for the quote */
+}
+
+img {
+    height: 300px;
+    float: right;
+    padding-right: 30px;
+}
+
+/* For my project, I wanted to emphasize font styles with the words from Clinton */
+/* Span tag styles */
+.listen {
+    font-family: 'Red Rose', cursive;
+}
+
+.sexual-relations {
+    font-family: 'Caveat', cursive;
+    border-bottom: 3px solid red;
+}
+
+.that-woman {
+    font-family: 'Lemonada', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.never {
+    font-family: 'Signika', sans-serif;
+}
+
+.false {
+    font-family: 'Truculenta', sans-serif;
+    border-bottom: 3px solid blue;
+}
+

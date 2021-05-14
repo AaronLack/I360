@@ -1,0 +1,285 @@
+/* Aaron Lack ~ Project 5 ~ I360 ~ 4/19/21 */
+
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* RWD tag to visually indicate media query breaks */
+#tag {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-color: #CC0000;
+}
+
+/* PAGE THEME COLORS - PLEASE USE */
+:root {
+    --menu-color: gold;
+    --iu-red: rgb(153, 0, 0);
+    --iu-grey: rgb(237, 235, 235);
+    --iu-black: rgb(69, 56, 43);
+}
+/* Extra small devices (phones, less than 768px) */
+
+/* 
+    GENERAL
+*/
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+/* 
+    TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5, h6, p, li, a, td, figcaption {
+    /* also adjust margin and line-height */
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.3em;
+    /* margin: 10px; */
+
+}
+
+h1 {
+    /* also adjust padding and font weight */
+    /* adjust H1 size in the media queries */
+    font-size: 24px;
+}
+
+h1 span {  
+    /* adjust font weight */
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 900; 
+}
+
+h3 {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* 
+    Navigation
+*/
+
+.openbtn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+.openbtn:hover {
+    color: gold;
+}
+.menu-text {
+    font-size: 12px;
+    display: block;
+}
+
+/* The side navigation menu */
+.all-over-bkg {
+    display: none;
+}
+
+.is-visible {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: block;
+}
+
+#mySidenav {
+    z-index: 10000;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: var(--iu-black);  
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*
+    HEADER
+*/
+header h1, .container {
+    /* should stretch up to 800px wide and center on the screen */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+header {
+    background-color: var(--iu-red);
+    color: var(--iu-grey);
+    /* Shrink the top padding */
+    text-align: center;
+
+}
+
+.container {
+    padding: 10px;
+}
+
+/*
+    MAP
+*/
+#mapid { 
+    /* adjust map height in the media queries  */
+    height: 180px; 
+}
+
+/* Main */
+.racing-stripes {
+    /* https://css-tricks.com/stripes-css/ */
+    background: repeating-linear-gradient(
+        135deg,
+        var(--iu-grey),
+        var(--iu-grey) 20px,
+        white 20px,
+        white 40px
+    );
+
+    height: 40px;  
+}
+
+article {
+    padding: 20px;
+    display: fl
+}
+
+/* Add additional page styles here */
+.degrees {
+    background-color: var(--iu-grey);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 20px;
+}
+
+.research-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.move-right{
+    max-width: 400px;
+}
+
+.challenges-img {
+    height: 300px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+footer {
+    padding: 2.0em;
+    /* set background color and use margin to push it down from the rest of the content */
+    background-color: var(--iu-black);  
+    height: 100px;
+}
+
+/*
+    BUTTONS AND LINKS
+*/
+.button {
+    background-color: var(--iu-red);
+    border: 3px solid var(--iu-red);
+    border-radius: 20px;
+    color: white;
+    padding: 0.5em 1.0em;
+    margin: 1.0em 2.0em 0 0;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color .2s ease-out,color .2s ease-out,border-color .18s ease-out;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--iu-red);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+    MEDIA QUERIES
+*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #tag { background-color: #FF9900; }
+    h1 { font-size: 36px; }
+    #mapid { height: 240px; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #tag { background-color: #00AA88; }
+    h1 { font-size: 42px; }
+    #mapid { height: 360px; }
+    .racing-stripes { height: 80px; }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #tag { background-color: #674EA7; }
+    #mapid { height: 480px; }
+}
