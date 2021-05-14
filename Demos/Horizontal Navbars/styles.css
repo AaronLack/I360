@@ -1,0 +1,134 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* https://styleguide.iu.edu/visual-style/colors.html */
+  --purple: #66435A;
+  --blue: #006298;
+  --brown: #4A3C31;
+  --red: #990000;
+}
+
+body {
+  /* height set only so we can scroll in the example - in general height should be set by the content */
+  background-color: var(--blue);
+  height: 1500px;
+}
+
+/*
+  PART ONE: SIMPLE HORIZONTAL NAVIGATION BAR
+*/
+
+nav {
+  /* margin set to separate each navbar so you can better see all examples */
+  margin: 0 0 3.0em;
+  /* @TO-DO: use flexbox to have menu items sit next to each other */
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+/* menu items */
+a {
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 0.5em 1.0em;
+  margin: 0.5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 2.0em;
+}
+
+nav.full-width {
+  /* @TO-DO: write CSS to make nav a solid white bar across the page */
+  /* @TO-DO: add a subtle box shadow on the lower edge of the bar */
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+nav.full-width a:link,
+nav.full-width a:visited {
+  /* set a border the same color as the background if you want to later change the border color */
+  /* otherwise the link will appear to jump when you hover over it as it changes size */
+  border-bottom: 3px solid white;
+}
+
+nav.full-width a:hover,
+nav.full-width a:active {
+  /* @TO-DO: add a bottom border in our accent color */
+  border-bottom: 3px solid #66435A;
+  /* the transition will make this hover effect smooth */
+  transition: all 0.3s;
+}
+
+nav.centered {
+  /* @TO-DO: center the content horizontally using flexbox */
+  /* align-items: center; */
+}
+
+nav.centered a:hover,
+nav.centered a:active {
+  /* @TO-DO: make the background 90% white (use alpha channel transparency) */
+  background-color: rgba(255,255,255,.9);
+  /* the transition will make this hover effect smooth */
+  transition: all 0.3s;
+}
+
+nav.sticky {
+  /* @TO-DO: position property set to sticky - set the top coordinate to 0 */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+/* 
+  FINISHED EARLY? 
+  - Change one of the hover effects to something else
+*/
+
+/*
+  PART TWO: SIMPLE HORIZONTAL NAVIGATION BAR WITH LOGO
+*/
+
+/* logo */
+img {
+  height: 60px;
+  padding: 12px 1.0em;
+  margin: 0.5em;
+  background: white;
+}
+
+/* logo on the left, menu items on the right */
+.menu-items {
+  /* @TO-DO: have menu items sit next to each other */
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav.right {
+  /* @TO-DO: spread content out to edges */
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media screen and (max-width: 620px) {
+  /* @TO-DO: adjust the logo so it sits center top */
+  .logo {
+
+  }
+  /* @TO-DO: adjust menu items to centrally fill the space */
+  .menu-items {
+
+  }
+}

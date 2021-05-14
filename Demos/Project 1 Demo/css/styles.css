@@ -1,0 +1,164 @@
+/* This is my custom styles sheet for css */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Utilities */
+/* Screen Reader Only: hides an element, but not from screen readers or search engines */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+/* Custom styles */
+body {
+    background-color: darkolivegreen;
+}
+
+
+/*Typography */
+h1, h2, h3, h4, h5, h6, small, p, td, li, figcaption {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+h2 {
+    border-top: 1px dotted darkgreen;
+    padding-top: 1.5em;
+    margin-top: 2.0em;
+    margin-bottom: 0.5em;
+    font-size: 36px;
+    color: olivedrab;
+}
+
+h3 {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 2.0em 0 1.0em;
+}
+
+h4 {
+    font-size: 18px;
+    color: darkslategrey;
+}
+
+p {
+    font-size: 110%;
+    line-height: 1.3em;
+}
+
+.container {
+    width: 800px;
+    margin: 35px auto; /* centers content */
+    border: 1px solid black;
+    /*border: 5px dotted darkgreen;
+    border-width: 5px;
+    border-style: dashed solid;
+    border-color: darkgreen; /*
+    /* border-top: 2px solid black; */
+    border-radius: 10px;  /* Rounds the corners of the box */
+    padding: 50px 50px 75px;
+    background-color: white;
+}
+/* Links */
+a:link, a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover a:active{
+    color: orange;
+    text-decoration: underline;
+}
+
+
+/* Images */
+img {
+    /* tells image to stay within parent container */
+    width: 100%;
+    display: block;
+}
+
+/* Helps align the figures with the text */
+figure {
+    margin-top: 2.5em;
+    margin-bottom: 2.0em;
+    margin-left: 0;
+    margin-right: 0;
+    /* Also margin: 2.5em 0 1.0em */
+}
+
+figcaption {
+    margin: 1.0em 0 2.0em;
+}
+
+.float-left {
+    width: 48%;
+    float: left;
+}
+
+.float-right {
+    width: 48%;
+    float: right;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Tables */
+table {
+    background-color: lightgoldenrodyellow;
+}
+
+tr {
+    
+}
+
+td {
+    padding: 10px;
+}
+
+.divider-line {
+    border-right: 2px solid darkolivegreen;
+    padding-left: 0; /* Overrides the td padding of 10px */
+}
+
+/* Page Styles */
+.ingredients {
+    background-color: lightyellow;
+    margin: 3.5em 0, 0;
+    padding: 8px 28px 30px; /* top, left&right, bottom */
+}
+
+ul li {
+    line-height: 1.5em; 
+}
+
+ol li {
+    padding-bottom: 1.0em;
+}
+
+.do-ahead {
+    background-color: lightgray;
+    padding: 8px;
+}
+

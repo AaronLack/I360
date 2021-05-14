@@ -1,0 +1,84 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START STYLES HERE */
+.container {
+  max-width: 1020px;
+  margin: 2.0em auto;
+}
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {
+
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {
+
+} */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {
+
+} */
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */

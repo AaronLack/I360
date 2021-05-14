@@ -1,0 +1,86 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --cream: #edebeb;
+  --black: #191919;
+  --brown: #4a3c31;
+  --light-blue: #0093e5;
+  --dark-blue: #0072b2;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: var(--cream);
+}
+footer {
+  /* @TO-DO: Add padding to make sure the content never sits on the edge */
+  /* @TO-DO: Use flexbox to align the content - it should wrap when narrow */
+  /* @TO-DO: Add a linear gradient going from brown to black */
+  /* https://www.colorzilla.com/gradient-editor/ */
+  padding: 2.0em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+
+  background: #f3e2c7; /* Old browsers */  
+  background: -moz-linear-gradient(-45deg, #f3e2c7 0%, #b68d4c 0%, #000000 99%); /* FF3.6-15 */ 
+  background: -webkit-linear-gradient(-45deg, #f3e2c7 0%,#b68d4c 0%,#000000 99%); /* Chrome10-25,Safari5.1-6 */  
+  background: linear-gradient(135deg, #f3e2c7 0%,#b68d4c 0%,#000000 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+.links {
+  /* @TO-DO: Use flexbox to position the .*-links divs - should wrap when narrow */
+  display: flex;
+  flex-flow: row wrap;
+}
+.about-links,
+.program-links {
+  /* @TO-DO: Add padding on the right and bottom, but 0 on the left and right */
+}
+a:link,
+a:visited {
+  /* @TO-DO: Links should be the white shade, no underline */
+}
+a:active,
+a:hover {
+  /* @TO-DO: Change the color on rollover - your choice */
+}
+/* @TO-DO: Write the CSS selectors needed to can make the H2 links look different than standard links */
+/* @TO-DO: The links should be normal weight, 20px and the blue shade */
+/* @TO-DO: On hover/active, the links should turn white */
+
+.social-media {
+  margin: 1em 0;
+}
+.icon {
+  /* @TO-DO: Space out the icons -- a little padding will do the trick on these inline elements */
+}
+
+button {
+  margin: 20px 0;
+  width: 160px;
+  border: none;
+  display: block;
+  padding: 10px 22px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #edebeb;
+  background-color: #0072b2;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  box-shadow: none;
+  background-color: #0093e5;
+}

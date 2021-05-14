@@ -1,0 +1,25 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* https://styleguide.iu.edu/visual-style/colors.html */
+  --purple: #66435A;
+  --blue: #006298;
+  --brown: #4A3C31;
+  --red: #990000;
+}
+
+body {
+  /* height set only so we can scroll in the example - in general height should be set by the content */
+  background-color: var(--brown);
+  height: 1500px;
+}
+

@@ -1,0 +1,108 @@
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+:root {
+  --cream: #EDEBEB;
+  --brown: #4A3C31;
+  --red: #990000;
+}
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+}
+header {
+  height: 600px; /* height matches image height / set b/c content not tall enough on its own this time */
+  /* @TO-DO: Add luddy-bkg.jpg as a background image */
+  /* @TO-DO: Use flexbox to center the content horizontally and vertically */
+  background: url("..//images/luddy-bkg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+}
+.brand {
+  /* @TO-DO: set background color to 50% of the white shade */
+  /* @TO-DO: align the text in the center, add some padding */
+  /* @TO-DO: add a border radius to make rounded corners */
+  background-color: rgba(255,255,255,.5);
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.5em;
+  
+
+
+}
+h1 {
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: 1px;
+  /* @TO-DO: add a text shadow in the white shade */
+  /* @TO-DO: adjust the margin and/or padding */
+  text-shadow: 2px 2px 2px var(--cream);
+  margin: 0 0.5em 0.5em 0.5em;
+  padding: 0.25em;
+ 
+
+}
+h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  /* @TO-DO: set the text to the white shade and the background to brown shade */
+  /* @TO-DO: adjust the margin and/or padding */
+  background-color: var(--brown);
+  color: white;
+  padding: 0.25em;
+  margin: 2.0em;
+  margin-bottom: 0;
+
+
+}
+img {
+  /* @TO-DO: make the image into a circle that is 200px in width and height */
+  /* @TO-DO: give the image a thick border in the white shade */
+  /* https://css-tricks.com/the-shapes-of-css/ */
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 20px solid white;
+
+
+}
+
+/* Buttons and Links */
+button {
+    background-color: #990000;
+    border: 3px solid #990000;
+    border-radius: 20px;
+    color: #EDEBEB;
+    padding: 0.5em 1.0em;
+    margin: 1.0em 2.0em 0;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: background-color .2s ease-out,color .2s ease-out,border-color .18s ease-out;
+}
+button:hover {
+    /* @TO-DO: when the mouse is over the button, make the background either transparent or the white shade */
+    /* @TO-DO: ... and make the text the red shade */
+    background-color: rgba(255,255,255,.5);
+    color: var(--red);
+
+
+}
+@media screen and (max-width: 712px) {
+  /* @TO-DO: Take the rounded corners off of the branding box containing and have it stretch all the way across */
+  
+}
+@media screen and (max-width: 576px) {
+  /* @TO-DO: Make the H1 smaller */
+  
+}

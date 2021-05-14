@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design Template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Add owl carosel links -->
+    <!-- Add plugins before custom styles -->
+    <link rel="stylesheet" href="owl_carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owl_carousel/assets/owl.theme.default.css">
+    
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+
+    
+</head>
+<body>
+    <h1>Owl Carousel</h1>
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <img src="images/kitten-1.jpg" alt="Kitten1">
+            <img src="images/kitten-2.jpg" alt="Kitten2">
+            <img src="images/kitten-3.jpg" alt="Kitten3">
+            <img src="images/kitten-5.jpg" alt="Kitten5">
+            <img src="images/kitten-6.jpg" alt="Kitten6">
+            <img src="images/kitten-7.jpg" alt="Kitten7">
+            <img src="images/kitten-8.jpg" alt="Kitten8">
+        </div>
+    
+    
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owl_carousel/owl.carousel.js"></script>
+    <script src="owl_carousel/owl.carousel.min.js"></script> 
+    <!-- <script> 
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    </script> -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+    </script>
+</body>
+</html>

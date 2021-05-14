@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Project 1 Demo - Complete HTML
+    I360 Web Design
+    Erika Lee
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Project 1 Demo</title>
+    
+    <link href="css/normalize.css"  rel="stylesheet">
+    <link href = "css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <img src="images/chicken-wonton-soup.jpg" alt="Chicken wonton soup">
+        
+        <!-- H1 indicates the most important title in the page -->
+        <h1><a href="https://smittenkitchen.com/2017/01/chicken-wonton-soup/">chicken wonton soup</a></h1>
+        
+        <!-- "bookmark" link to an ID within the page -->
+        <p>JANUARY 6, 2017 • <a href="#recipe">JUMP TO RECIPE</a></p>
+
+        <!-- Replace typographic characters with HTML entities when possible -->
+        <p>I don&rsquo;t know why it took me so long to make this as it combines the only two things I ever want when I&rsquo;m sick: chicken noodle and wonton soup. The thing is, when you&rsquo;re sick, you absolutely do not want to cook anything. (Also sometimes when we&rsquo;re well, to be completely honest. Shh, don&rsquo;t tell anyone.) And so for a couple nights, we picked up a decent chicken noodle soup in the neighborhood, but when we tired of that, ordered wonton soup instead. It&rsquo;s usually a disappointment. Sometimes it seems like a quart of bland broth with three floating pockets in it, not the most filling meal. Plus, it&rsquo;s off the menu for anyone who doesn&rsquo;t eat pork or shrimp. But this one was not; it was chicken wontons in chicken broth and it was exceptional, the happiest mashup of the two wonderful things.</p>
+
+        <!-- Images can be included using only the IMG tag, or as part of the FIGURE / IMG / FIGCAPTION tag set up -->
+        <figure>
+            <img src="images/chicken-wonton-soup-step1.jpg" alt="Step 1 to make chicken wonton soup">
+            <figcaption>Make the chicken filling for the wontons.</figcaption>
+        </figure>
+
+        <p>Had the delivery not come an hour later, forcing me to &mdash; <em>gasp!</em> &mdash; scramble some food together for the kids anyway, I probably would have never made this. But as I was enjoying my soup, I realized that this would be so ridiculously easy to hack, it might even be done before it arrived next time.</p>
+
+        <div class = "group">
+            <figure class="float-left">
+                <img src="images/chicken-wonton-soup-step2.jpg" alt="Step 2 to make chicken wonton soup">
+                <figcaption>Place a spoonful of filling in each wonton wrapper and pinch into a packet.</figcaption>
+            </figure>
+            <figure class="float-right">
+                <img src="images/chicken-wonton-soup-step3.jpg" alt="Step 3 to make chicken wonton soup">
+                <figcaption>Cook the wontons and add to the broth.</figcaption>
+            </figure>
+        </div>
+
+        <!-- If the link goes to a page outside of your website, you need to include the complete URL. 'Target' lets you optionally open that link in a new tab -->
+        <p>I did make it as soup here, but I also need to tell you that my favorite way to eat wontons when we&rsquo;re not sniffling and sneezing is Sichuan-style, in chili oil with soy and garlic. Slippery, hot, salty and savory at once, there&rsquo;s almost no going back after trying them once. This <a href="https://www.epicurious.com/recipes/food/views/sichuanese&mdash;wontons-in-chilli-oil-sauce-em-hong-you-chao-shou-em-51147600" target="_blank">recipe from Fuschia Dunlop</a> seems as straightforward as possible; I&rsquo;d start with the sauce here if making them for the first time.</p>
+
+        <h2 id="recipe">Chicken Wonton Soup</h2>
+        <!-- Tabular data can be displayed in a table using TABLE / TR (table row) / TD (table data) -->
+        <table>
+            <tr>
+                <td class="divider-line">SERVINGS: 6</td>
+                <td>TIME: 1 HOUR</td>
+            </tr>
+        </table>
+
+        <p>I found the <a href="http://www.seriouseats.com/2013/04/the-food-lab-wonton-soup.html" target="_blank">wonton soup recipe on Serious Eats</a> to be a useful reference in making this, although my recipe is intended to be quick, lazy and wildly less authentic.</p>
+
+        <p>As will happen, my 12-ounce package of wonton wrappers contained 50, but 1 pound of meat made 58 wontons. What&rsquo;s a recipe writer to do? Do we buy extra wonton wrappers (you can freeze the rest)? Do we write a recipe for 3/4 pound of ground meat, not exactly standard package size? I went with the latter as even with 6 wontons per bowl of soup, you&rsquo;ll have extra. (You can freeze these too until needed.)</p>
+
+        <p>I include ingredients to &ldquo;doctor up&rdquo; store-bought stock with ginger, garlic and scallions, but I need to be completely honest here: you can probably skip it too. The wontons have the real flavor here, and a little dash of soy, toasted sesame oil and fistful of scallions go a long way at the end to making this an easy weeknight soup, yes, even with that wonton folding.</p>
+
+        <h3 class="sr-only">Ingredients</h3>
+
+        <div class="ingredients">
+
+            <h4>WONTONS</h4>
+            <!-- lists are made of two tags.. one to indicate an ordered or unordered list (OL or UL), and one to indicate each list item (LI) -->
+            <ul>
+                <li>3/4 pound ground chicken</li>
+                <li>1 teaspoon soy sauce</li>
+                <li>3/4 teaspoon kosher salt</li>
+                <li>1 1/2 teaspoons toasted sesame oil</li>
+                <li>1 1/2 teaspoons grated fresh ginger</li>
+                <li>3 tablespoons minced garlic chives, regular chives or scallions</li>
+                <li>Ground white pepper, to taste</li>
+                <li>50 wonton wrappers (about 12 ounces), thawed if frozen, thinnest ones you can find</li>
+                <li>Cornstarch, to prevent sticking</li>
+            </ul>
+
+            <h4>BROTH</h4>
+            <ul>
+                <li>8 cups prepared chicken stock or broth, store-bought or homemade</li>
+                <li>A 3-inch piece of ginger, peeled and sliced</li>
+                <li>2 large garlic cloves, crushed</li>
+                <li>1 bundle scallions, to be used here and to finish</li>
+                <li>Soy sauce or salt, to taste</li>
+            </ul>
+
+            <h4>TO FINISH</h4>
+            <ul>
+                <li>3 ounces baby spinach leaves (a few handfuls)</li>
+                <li>Toasted sesame oil and soy sauce, to taste</li>
+            </ul>
+        
+        </div>
+
+        <h3>Directions</h3>
+
+        <ol>
+            <li><strong>Make your filling:</strong> Combine chicken, soy sauce, salt, sesame oil, ginger, chives and pepper in a bowl with a fork. If you&rsquo;d like to test for seasoning, put a tiny dab in a microwave-safe bowl or plate and cook for 10 very splattery seconds. Adjust flavors as desired.</li>
+
+            <li><strong>Form your wontons:</strong> Place a few wontons wrappers on your counter. Cover the remaining ones with a piece of plastic wrap. Place 1 heaped teaspoon (from a measuring spoon set) in the center. Use your fingers dipped in water to dampen the edges. Fold one corner diagonally across to the other, pressing air out as you seal it shut. Then, bring the two corners on the wide side of the triangle down below it and use a dab of water to seal them shut. You&rsquo;re not trying to pull the corners across the belly, but pointing downward. Lightly sprinkle a big plate with cornstarch and place form wontons on it. Repeat with remaining wontons. I found that after I&rsquo;d made a couple and got the hang of it, I could lay out 6 at a time and get each batch of 6 done in 2 minutes, meaning that this process took me about 20 minutes total.</li>
+
+            <li><strong>Fix up your stock (optional):</strong> While you&rsquo;re forming wontons, should you want to enhance your stock (see note up top first), chop the white and light green parts of your scallions into 1/2- to 1-inch segments. Cut dark green tops into thin slivers and save for garnish later. Place stock in 3 to 4-quart pot with sliced ginger, the white and light green scallions you&rsquo;ve just chopped, garlic and soy sauce or salt, as needed, to season. Simmer them together for 20 minutes while you make the wontons, then strain out the ginger, scallions and garlic.</li>
+
+            <li><strong>Cook the wontons:</strong> Once your wontons are formed, you can cook them right in the simmering broth or you can do so in simmering water &mdash; the latter is better so that the cornstarch on the wrappers doesn&rsquo;t make the soup cloudy. Boil wontons for 3 minutes to cook them inside; this is really all it takes, but if you&rsquo;re nervous, cut one in half to make sure.</li>
+
+            <li><strong>To finish soup:</strong> Add spinach to simmering broth and let cook for one minute, until softened. Add cooked wontons to broth and let them warm through again for 30 seconds. Ladle wontons and soup into bowls. I used about 1 1/4 cups broth and 6 wontons per serving. Drizzle each dish with a little toasted sesame oil, a bit of soy sauce (if desired) and scatter with reserved dark green scallion tops. Dig in.</li>
+        </ol>
+
+        <p class="do-ahead"><strong>Do ahead:</strong> Wontons can be formed and refrigerated for a day, or frozen for a month or longer.</p>
+
+        <!-- The SMALL tag is useful, but it's not a block level element.. either wrap in a P or adjust how its display property in the CSS to be 'block' -->
+        <p><small>SEE MORE: CHICKEN, CHINESE, PHOTO, SOUP, WEEKNIGHT FAVORITE, WINTER</small></p>
+    </div>
+</body>
+</html>

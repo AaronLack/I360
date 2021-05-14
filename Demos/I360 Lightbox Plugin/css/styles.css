@@ -1,0 +1,149 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    STRUCTURE
+*/
+body {
+    /* Uncomment for RWD / media query testing */
+    background-color: #434B63; 
+}
+
+.container {
+    max-width: 1020px;
+    margin: 4.0em auto;
+}
+
+/*
+    TYPOGRAPHY
+*/
+h1, h2, h3, p, figcaption {
+    font-family: "Indie Flower";
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+
+
+/*
+    IMAGES
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+    background-color: white;
+    padding: 20px;
+}
+
+figcaption {
+    padding-top: 10px;
+}
+
+/*
+    GALLERY
+*/
+.gallery {
+    /* flex container for the images */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow: row wrap;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Find a way to add 0.5em margin to each image so they have some room to breathe */
+
+/*
+* Hover.css (http://ianlunn.github.io/Hover/)
+* Version: 2.3.2
+* Author: Ian Lunn @IanLunn
+* Author URL: http://ianlunn.co.uk/
+* Github: https://github.com/IanLunn/Hover
+
+* Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+*/
+/* Rotate */
+.hvr-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+
+/*
+    UTILITIES
+*/
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+
+}
