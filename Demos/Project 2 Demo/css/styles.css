@@ -1,0 +1,106 @@
+/* Erika's Project 2 Demo */
+
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* START STYLES HERE */
+body {
+  background: url(../images/Omega_Nebula.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 2000px; /* for testing position property (astronaut) */
+}
+
+.quotation {
+  width: 700px;
+  margin: 100px auto 0;
+  padding: 2.0em 3.0em;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* ! the trick is to emphasize 1-2 design choices - don't overdo */
+  /* border-left: 8px solid gold; */
+  /* color: white; */
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+  /* opacity: 0.2; */
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  position: relative;
+  
+}
+.quote {
+  font-size: 36px;
+}
+
+/* add hanging quote mark here using pseudo elements */
+.quote::before {
+  content: open-quote;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: gold;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.quote::after {
+  content: close-quote;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: gold;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+
+.artist {
+  font-size: 24px;
+  text-align: right;
+}
+.star {
+  color: gold;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.astronaut {
+  width: 150px;
+  
+
+
+  
+  /* CHALLENGE ONE: Astronaut lives in the upper right-hand corner and doesn’t move if the page is scrolled. */
+  
+  /* position:fixed;
+  top: 0;
+  right: 0; */
+
+  /* CHALLENGE TWO: Astronaut lives in the upper left-hand corner of the site and moves on scroll. (Astronaut is not connected to the quote.) */
+  
+  /* position: absolute;
+  top: 20px;
+  left: 10px; */
+
+  /* CHALLENGE THREE: Astronaut is attached to the lower right side of the quote and goes where the quote goes. Set the CSS properties position, top and right.
+     Hint: you will need to set TWO position properties */
+
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     z-index: -100;
+
+}
+
+
+
+
+
+
+
+
+
+

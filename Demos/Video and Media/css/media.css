@@ -1,0 +1,111 @@
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+:root {
+  --cream: #EDEBEB;
+  --grey: #333333;
+  --red: #990000;
+  --links: rgb(0, 98, 152);
+  --links-on-hover: rgb(1, 66, 106);
+}
+body {
+  margin: 0;
+}
+article {
+  /* @TO-DO: Set the background color to cream */
+  /* @TO-DO: Add a few ems of padding to the top and bottom --
+     if we have more components to add before/after this one
+     we want some whitespace between */
+  background-color: var(--cream);
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+}
+.container {
+  /* @TO-DO: Maximum width of 1020px - centered in the article */
+  max-width: 1020px;
+  margin: 0 auto;
+  
+
+}
+.people {
+  /* 
+    @TO-DO: Maximum width of ~650px - centered in the article 
+    OPTION 1: you could adjust the padding in the container with this class
+    Up to you - try either the double container we did in the gallery
+    OR OPTION 2: try a single container with two classes where one overrides or adds to
+    some of the styling already on the .container
+  */ 
+  max-width: 650px;
+  
+
+}
+section {
+  /* @TO-DO: Add margin on the top and bottom to add whitespace between each person */
+  /* @TO-DO: Use this box to control the image and text for each person */
+  border: 10px solid navy;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+}
+section div {
+  /* @TO-DO: Add some padding on top and left of text */
+  padding-left: 25px;
+  padding-top: 10px;
+  
+  
+
+
+
+}
+/* TYPOGRAPHY */
+h3, p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--grey);
+  line-height: 1.3em;
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+h3 {
+  font-weight: bold;
+}
+/* LINKS */
+a:link, a:visited {
+  color: var(--links);
+}
+a:active, a:hover {
+  color: var(--links-on-hover);
+}
+img {
+  /* @TO-DO: Make the image round - width of ~175px */
+  width: 175px;
+  border-radius: 50%;
+  
+
+}
+@media screen and (max-width: 664px) {
+  /* @TO-DO: TURN OFF THE FLEX INSIDE EACH PERSON'S SECTION */
+  /* @TO-DO: once it's off, set the image to be a block and center it on the screen */
+  /* @TO-DO: center align the text and remove the left padding (so it appears truly centered) */
+  /* Feel free to try to do this with flexbox ON as well.. I find that sometimes it's easier
+     to turn it off when it isn't helping, especially in XS views. */
+  section {
+    
+  } 
+  section img {
+    
+  }
+  section div {
+    
+  }
+}

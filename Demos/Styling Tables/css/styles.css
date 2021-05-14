@@ -1,0 +1,80 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 960px;
+    margin: 100px auto;
+}
+
+.table-1 {
+    margin-bottom: 4.0em;
+}
+
+/*
+    TABLE CHALLENGE .1
+    https://flatuicolors.com/
+*/
+
+/* styles the table tag with the ID "table-1"*/
+.table-1 {
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+.table-1 tr {
+    background-color: #ecf0f1;
+}
+
+/* https://css-tricks.com/snippets/css/css3-zebra-striping-a-table/ */
+.table-1 tr:nth-child(odd) {
+    background-color: white;
+}
+
+.table-1 td, .table-1 th {
+  font-family: Trebuchet, Helvetica, sans-serif;
+}
+
+.table-1 th {
+    padding: 20px;
+    background-color: #e74c3c; /*From website Erika gave us */
+    color: white;
+    text-align: left;
+}
+
+.table-1 td {
+    padding: 10px;
+}
+
+/*
+    TABLE CHALLENGE .2
+    https://flatuicolors.com/
+*/
+
+/* styles the table tag with the ID "table-2"*/
+.table-2 {
+    table-layout: fixed;
+    width: 35%;
+}
+
+.table-2 td, .table-2 th {
+  font-family: Trebuchet, Helvetica, sans-serif;
+  border: 2px solid white;
+}
+
+.table-2 th {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+}
+
+.table-2 td {
+    background-color: #ecf0f1;
+    padding: 20px;
+}

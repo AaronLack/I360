@@ -1,0 +1,99 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --cream: #edebeb;
+  --grey: #333333;
+  --red: #990000;
+}
+body {
+  margin: 0;
+}
+article {
+  /* @TO-DO: Add a couple of ems of padding either here or on .container */
+  padding: 15px;
+}
+
+.container {
+  /* @TO-DO: Set a maximum width of 1020px */
+  /* @TO-DO: Center on the screen */
+  max-width: 1020px;
+  margin: 0 auto;
+
+}
+h2,
+h3,
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* @TO-DO: Text is grey, line height of 1.3em, remove the margin */
+  color: grey;
+  line-height: 1.3em;
+
+}
+h2 {
+  /* @TO-DO: font is 48px - adjust the top & bottom margin as needed */
+  font-size: 48px;
+
+}
+h3 {
+  /* @TO-DO: font is 24px - adjust the top & bottom margin as needed */
+  font-size: 24px;
+
+}
+p {
+  /* @TO-DO: font is 20px - adjust the top & bottom margin as needed */
+  font-size: 20px;
+
+}
+button p {
+  /* @TO-DO: font is 18px */
+  font-size: 18px;
+  
+}
+section {
+  /* @TO-DO: images are centered & should wrap in narrower views */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 2px solid lightgrey;
+  border-radius: 1em;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  max-width: 430px;
+  flex: 1 0 288px;
+  display: flex;
+  align-items: flex-start;
+}
+button:last-of-type {
+  margin-right: 0;
+}
+button:hover {
+  background: var(--red);
+  border: 2px solid var(--red);
+  transition: border 0.1s;
+  transition: background-color 0.1s;
+}
+button:hover h3,
+button:hover p {
+  color: white;
+  transition: color 0.1s;
+}
+@media screen and (max-width: 694px) {
+  /* @TO-DO: h2 is smaller, maybe 36px, when view is narrower */
+  h2 { 
+    font-size: 36px;
+  }
+
+
+}

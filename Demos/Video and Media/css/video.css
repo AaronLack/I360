@@ -1,0 +1,42 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #990000;
+}
+
+article {
+  /* @TO-DO: Add a radial gradient using one of the gradient generators you're familiar with */
+  padding: 75px;
+  margin: 0 auto;
+}
+
+/* @TO-DO: Add the styling from https://embedresponsively.com/ here */
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; overflow: hidden; 
+  max-width: 100%; 
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+
+/* @TO-DO: Add a way to control the size of your video -- make it either a fixed size or flexible - your choice */
+/* @TO-DO: Center your video inside the article */
+/* @TO-DO: Try adding margin for whitespace to see what happens, 
+   but likely you'll need some PADDING on top/bottom if you want 
+   to see your bkg color there */
+
+
+
